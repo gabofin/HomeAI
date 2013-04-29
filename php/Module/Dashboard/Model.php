@@ -213,7 +213,7 @@ class Model extends MModel implements Interfaces\Model
                     array(
                         'id'            => 'widgetMeteo',
                         'title'         => 'Kaustinen sääasema',
-                        'column'        => 'first',
+                        'column'        => 'second',
                         'editurl'       => '',
                         'open'          => true,
                         'metadata'      => array(
