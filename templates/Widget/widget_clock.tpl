@@ -25,13 +25,13 @@
         var day = date.getDate() < 10 ? "0"+ date.getDate() : date.getDate();
         var month = (date.getMonth() + 1) < 10 ? "0"+ (date.getMonth() + 1) : (date.getMonth() + 1);
         var year = date.getFullYear();
-        var weeknumber = date.getWeek();
+        var weekNumber = date.getWeek();
 
         var container = jQuery('#widgetClock');
 
         jQuery('div.time', container).text(hours +':'+ minutes);
         jQuery('div.date', container).text(day +'.'+ month +'.'+ year);
-        jQuery('div.day', container).text(dayNames[date.getDay()] + ". Viikko "+weeknumber +".");
+        jQuery('div.day', container).text(dayNames[date.getDay()] + ". Viikko "+weekNumber +".");
 
     }, 1000);
 </script>

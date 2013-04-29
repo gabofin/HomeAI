@@ -161,14 +161,14 @@ class Model extends MModel implements Interfaces\Model
                     ),
                     array(
                         'id'            => 'widget5',
-                        'title'         => 'Content fetched via cUrl',
+                        'title'         => 'Varikkotie webbikamera',
                         'column'        => 'first',
                         'editurl'       => '',
                         'open'          => true,
                         'metadata'      => array(
                             'type'      => 'curl',
                             'data'      => array(
-                                'url'   => 'http://wunder.sytes.net/fizzbuzz.php',
+                                'url'   => '/ubiquiti.php',
                             ),
                         ),
                         'method'        => 'Curl',
