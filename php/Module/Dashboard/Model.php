@@ -217,7 +217,7 @@ class Model extends MModel implements Interfaces\Model
                         'method'        => 'Rss',
                     ),
 
-
+                    /*
                     array(
                         'id'            => 'widget6',
                         'title'         => 'Highcharts example 1',
