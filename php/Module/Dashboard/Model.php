@@ -121,6 +121,7 @@ class Model extends MModel implements Interfaces\Model
                         'url'           => $url . '/Widget/Clock',
                         'method'        => 'Clock',
                     ),
+                    /*
                     array(
                         'id'            => 'EggTimer',
                         'title'         => 'Egg Timer',
@@ -129,6 +130,8 @@ class Model extends MModel implements Interfaces\Model
                         'url'           => $url . '/Widget/EggTimer',
                         'method'        => 'EggTimer',
                     ),
+                    */
+                    /*
                     array(
                         'id'            => 'widget3',
                         'title'         => 'RSS feed from ksml.fi',
@@ -144,6 +147,8 @@ class Model extends MModel implements Interfaces\Model
                         'refresh'       => 120,
                         'method'        => 'Rss',
                     ),
+                    */
+                    /*
                     array(
                         'id'            => 'widget4',
                         'title'         => 'RSS feed from hs.fi',
@@ -159,6 +164,7 @@ class Model extends MModel implements Interfaces\Model
                         'refresh'       => 120,
                         'method'        => 'Rss',
                     ),
+                    */
                     array(
                         'id'            => 'widgetWebcam1',
                         'title'         => 'Varikkotie webbikamera',
@@ -188,23 +194,9 @@ class Model extends MModel implements Interfaces\Model
                         'method'        => 'Curl',
                     ),
                     array(
-                        'id'            => 'widgetRelay',
-                        'title'         => 'Releohjain',
-                        'column'        => 'first',
-                        'editurl'       => '',
-                        'open'          => true,
-                        'metadata'      => array(
-                            'type'      => 'curl',
-                            'data'      => array(
-                                'url'   => 'http://127.0.0.1/tcw110.php',
-                            ),
-                        ),
-                        'method'        => 'Curl',
-                    ),
-                    array(
                         'id'            => 'widgetAmpparit',
                         'title'         => 'Uusimmat uutiset (ampparit.com)',
-                        'column'        => 'third',
+                        'column'        => 'second',
                         'open'          => true,
                         'metadata'      => array(
                             'type'      => 'rss',
@@ -215,6 +207,20 @@ class Model extends MModel implements Interfaces\Model
                         ),
                         'refresh'       => 60,
                         'method'        => 'Rss',
+                    ),
+                    array(
+                        'id'            => 'widgetRelay',
+                        'title'         => 'Releohjain',
+                        'column'        => 'second',
+                        'editurl'       => '',
+                        'open'          => true,
+                        'metadata'      => array(
+                            'type'      => 'curl',
+                            'data'      => array(
+                                'url'   => 'http://127.0.0.1/tcw110.php',
+                            ),
+                        ),
+                        'method'        => 'Curl',
                     ),
 
                     /*
