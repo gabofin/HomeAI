@@ -160,7 +160,7 @@ class Model extends MModel implements Interfaces\Model
                         'method'        => 'Rss',
                     ),
                     array(
-                        'id'            => 'widget5',
+                        'id'            => 'widgetWebcam1',
                         'title'         => 'Varikkotie webbikamera',
                         'column'        => 'first',
                         'editurl'       => '',
@@ -169,6 +169,34 @@ class Model extends MModel implements Interfaces\Model
                             'type'      => 'curl',
                             'data'      => array(
                                 'url'   => 'http://127.0.0.1/ubiquiti.php',
+                            ),
+                        ),
+                        'method'        => 'Curl',
+                    ),
+                    array(
+                        'id'            => 'widgetMeteo',
+                        'title'         => 'Kaustinen sääasema',
+                        'column'        => 'first',
+                        'editurl'       => '',
+                        'open'          => true,
+                        'metadata'      => array(
+                            'type'      => 'curl',
+                            'data'      => array(
+                                'url'   => 'http://meteo.toimii.fi/plain.php',
+                            ),
+                        ),
+                        'method'        => 'Curl',
+                    ),
+                    array(
+                        'id'            => 'widgetRelay',
+                        'title'         => 'Releohjain',
+                        'column'        => 'first',
+                        'editurl'       => '',
+                        'open'          => true,
+                        'metadata'      => array(
+                            'type'      => 'curl',
+                            'data'      => array(
+                                'url'   => 'http://127.0.0.1/tcw110.php',
                             ),
                         ),
                         'method'        => 'Curl',
@@ -189,7 +217,7 @@ class Model extends MModel implements Interfaces\Model
                         'method'        => 'Rss',
                     ),
 
-                    /*
+
                     array(
                         'id'            => 'widget6',
                         'title'         => 'Highcharts example 1',
@@ -205,6 +233,7 @@ class Model extends MModel implements Interfaces\Model
                             ),
                         ),
                     ),
+
                     array(
                         'id'            => 'widget7',
                         'title'         => 'Highcharts live example',
