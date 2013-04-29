@@ -222,6 +222,20 @@ class Model extends MModel implements Interfaces\Model
                         ),
                         'method'        => 'Curl',
                     ),
+                    array(
+                        'id'            => 'widgetLightningradar',
+                        'title'         => 'Salamatutka',
+                        'column'        => 'third',
+                        'editurl'       => '',
+                        'open'          => true,
+                        'metadata'      => array(
+                            'type'      => 'curl',
+                            'data'      => array(
+                                'url'   => 'http://127.0.0.1/salamatutka.php',
+                            ),
+                        ),
+                        'method'        => 'Curl',
+                    ),
 
                     /*
                     array(
