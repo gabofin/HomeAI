@@ -194,19 +194,18 @@ class Model extends MModel implements Interfaces\Model
                         'method'        => 'Curl',
                     ),
                     array(
-                        'id'            => 'widgetAmpparit',
-                        'title'         => 'Uusimmat uutiset (ampparit.com)',
+                        'id'            => 'widgetLightningradar',
+                        'title'         => 'Salamatutka',
                         'column'        => 'second',
+                        'editurl'       => '',
                         'open'          => true,
                         'metadata'      => array(
-                            'type'      => 'rss',
+                            'type'      => 'curl',
                             'data'      => array(
-                                'url'   => 'http://feeds.feedburner.com/ampparit-uutiset',
-                                'limit' => 10,
+                                'url'   => 'http://127.0.0.1/salamatutka.php',
                             ),
                         ),
-                        'refresh'       => 60,
-                        'method'        => 'Rss',
+                        'method'        => 'Curl',
                     ),
                     array(
                         'id'            => 'widgetRelay',
@@ -223,18 +222,19 @@ class Model extends MModel implements Interfaces\Model
                         'method'        => 'Curl',
                     ),
                     array(
-                        'id'            => 'widgetLightningradar',
-                        'title'         => 'Salamatutka',
+                        'id'            => 'widgetAmpparit',
+                        'title'         => 'Uusimmat uutiset (ampparit.com)',
                         'column'        => 'third',
-                        'editurl'       => '',
                         'open'          => true,
                         'metadata'      => array(
-                            'type'      => 'curl',
+                            'type'      => 'rss',
                             'data'      => array(
-                                'url'   => 'http://127.0.0.1/salamatutka.php',
+                                'url'   => 'http://feeds.feedburner.com/ampparit-uutiset',
+                                'limit' => 10,
                             ),
                         ),
-                        'method'        => 'Curl',
+                        'refresh'       => 60,
+                        'method'        => 'Rss',
                     ),
 
                     /*
