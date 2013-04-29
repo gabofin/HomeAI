@@ -168,7 +168,7 @@ class Model extends MModel implements Interfaces\Model
                         'metadata'      => array(
                             'type'      => 'curl',
                             'data'      => array(
-                                'url'   => '/ubiquiti.php',
+                                'url'   => 'http://127.0.0.1/ubiquiti.php',
                             ),
                         ),
                         'method'        => 'Curl',
