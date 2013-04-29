@@ -179,20 +179,22 @@ class Model extends MModel implements Interfaces\Model
                         ),
                         'method'        => 'Curl',
                     ),
+
                     array(
-                        'id'            => 'widgetMeteo',
-                        'title'         => 'Kaustinen sääasema',
+                        'id'            => 'widgetRelay',
+                        'title'         => 'Releohjain',
                         'column'        => 'first',
                         'editurl'       => '',
                         'open'          => true,
                         'metadata'      => array(
                             'type'      => 'curl',
                             'data'      => array(
-                                'url'   => 'http://meteo.toimii.fi/plain.php',
+                                'url'   => 'http://127.0.0.1/tcw110.php',
                             ),
                         ),
                         'method'        => 'Curl',
                     ),
+
                     array(
                         'id'            => 'widgetLightningradar',
                         'title'         => 'Salamatutka',
@@ -207,20 +209,22 @@ class Model extends MModel implements Interfaces\Model
                         ),
                         'method'        => 'Curl',
                     ),
+
                     array(
-                        'id'            => 'widgetRelay',
-                        'title'         => 'Releohjain',
-                        'column'        => 'second',
+                        'id'            => 'widgetMeteo',
+                        'title'         => 'Kaustinen sääasema',
+                        'column'        => 'first',
                         'editurl'       => '',
                         'open'          => true,
                         'metadata'      => array(
                             'type'      => 'curl',
                             'data'      => array(
-                                'url'   => 'http://127.0.0.1/tcw110.php',
+                                'url'   => 'http://meteo.toimii.fi/plain.php',
                             ),
                         ),
                         'method'        => 'Curl',
                     ),
+
                     array(
                         'id'            => 'widgetAmpparit',
                         'title'         => 'Uusimmat uutiset (ampparit.com)',

@@ -15,13 +15,12 @@
        var onejan = new Date(this.getFullYear(), 0, 1);
        return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
    };
-    var dayNames = new Array("Sunnuntai","Maanantai","Tiistai","Keskiviikko","Torstai","Perjantai","Lauantai");
-    setInterval(function() {
+   var dayNames = new Array("Sunnuntai","Maanantai","Tiistai","Keskiviikko","Torstai","Perjantai","Lauantai");
+   setInterval(function() {
         var date = new Date();
 
         var hours = date.getHours() < 10 ? "0"+ date.getHours() : date.getHours();
         var minutes = date.getMinutes() < 10 ? "0"+ date.getMinutes() : date.getMinutes();
-        var seconds = date.getSeconds() < 10 ? "0"+ date.getSeconds() : date.getSeconds();
         var day = date.getDate() < 10 ? "0"+ date.getDate() : date.getDate();
         var month = (date.getMonth() + 1) < 10 ? "0"+ (date.getMonth() + 1) : (date.getMonth() + 1);
         var year = date.getFullYear();
@@ -33,5 +32,5 @@
         jQuery('div.date', container).text(day +'.'+ month +'.'+ year);
         jQuery('div.day', container).text(dayNames[date.getDay()] + ". Viikko "+weekNumber +".");
 
-    }, 1000);
+   }, 1000);
 </script>
