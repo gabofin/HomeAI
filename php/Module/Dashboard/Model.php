@@ -226,6 +226,21 @@ class Model extends MModel implements Interfaces\Model
                     ),
 
                     array(
+                        'id'            => 'widgetUPS',
+                        'title'         => 'UPS',
+                        'column'        => 'third',
+                        'editurl'       => '',
+                        'open'          => true,
+                        'metadata'      => array(
+                            'type'      => 'curl',
+                            'data'      => array(
+                                'url'   => 'http://127.0.01/ups.php',
+                            ),
+                        ),
+                        'method'        => 'Curl',
+                    ),
+
+                    array(
                         'id'            => 'widgetAmpparit',
                         'title'         => 'Uusimmat uutiset (ampparit.com)',
                         'column'        => 'third',
