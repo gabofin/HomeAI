@@ -115,7 +115,7 @@ class Model extends MModel implements Interfaces\Model
                 'data'                  => array(
                     array(
                         'id'            => 'Clock',
-                        'title'         => 'Clock',
+                        'title'         => 'Päivyri',
                         'column'        => 'first',
                         'open'          => true,
                         'url'           => $url . '/Widget/Clock',

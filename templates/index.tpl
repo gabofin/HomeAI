@@ -14,10 +14,10 @@
 
     <link rel="icon" href="{$pageBaseHref}images/layout/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="{$pageBaseHref}images/layout/favicon.ico" type="image/x-icon"/>
-    <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
 
 {$pageJavascript}
-    <script src="http://code.jquery.com/jquery-migrate-git.js"></script>
+    <script src="js/jquery-migrate-git.js"></script>
 {$pageCss}
 
 {literal}

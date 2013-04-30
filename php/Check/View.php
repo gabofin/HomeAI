@@ -232,7 +232,7 @@ class View implements Interfaces\View
 
             <link rel="icon" href="images/layout/favicon.ico" type="image/x-icon"/>
             <link rel="shortcut icon" href="images/layout/favicon.ico" type="image/x-icon"/>
-            <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+            <link href='css/fonts.css' rel='stylesheet' type='text/css'>
 
             <link href="css/js/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="screen, projection" />
             <link href="css/js/bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen, projection" />
